@@ -23,7 +23,7 @@ def ifzf(tpid):
 
     tp = data['desc']['type']
     print(tp)
-    fasongneir = '-----------------Bilibili转发开始-----------------'
+    fasongneir = '---------Bilibili转发开始---------'
     print(fasongneir)
     postdata = json.dumps({"msg": fasongneir})
     time.sleep(2)
