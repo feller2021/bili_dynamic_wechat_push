@@ -26,8 +26,11 @@ def jiexi(dk, cardss, jk):
     uname = dk['user_profile']['info']['uname']
     dynamic_type = dk['type']
     timestamp = dk['timestamp']
+
     timestamp=int(timestamp)
-    dynamic_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(timestamp))
+    dynamic_time1 = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(timestamp))
+    dynamic_time2=datetime.strptime(dynamic_time1, "%Y-%m-%d %H:%M:%S")+ timedelta(hours=8)
+    dynamic_time=str(dynamic_time2)
     print(uname)
     print(dynamic_type)
     print(dynamic_time)
