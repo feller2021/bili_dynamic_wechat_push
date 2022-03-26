@@ -23,12 +23,12 @@ def ifzf(tpid):
 
     tp = data['desc']['type']
     print(tp)
-    fasongneir = '---------Bilibili转发开始---------'
-    print(fasongneir)
-    postdata = json.dumps({"msg": fasongneir})
-    time.sleep(2)
-    repp = requests.post(url=imgpost, data=postdata, headers=headers)
-    print(repp)
+    # fasongneir = '---------Bilibili转发开始---------'
+    # print(fasongneir)
+    # postdata = json.dumps({"msg": fasongneir})
+    # time.sleep(2)
+    # repp = requests.post(url=imgpost, data=postdata, headers=headers)
+    # print(repp)
 
 
     if tp == 2:
@@ -37,21 +37,29 @@ def ifzf(tpid):
         nr = js['item']['description']
         pic_url = js['item']['pictures']
         print(nr)
+        # 2022年3月份替换模板消息发送渠道，为了拼接图片。故作出如下更改
+        tupian = ""
 
 
         for pic in pic_url:
             print(pic['img_src'])
             jpg = pic['img_src']
             # print(jpg)
-            postdata = json.dumps({"msg": {"type": "image", "url": "%s" % jpg}})
-            time.sleep(2)
-            repp = requests.post(url=imgpost, data=postdata, headers=headers)
-            print(repp)
+            # postdata = json.dumps({"msg": {"type": "image", "url": "%s" % jpg}})
+            # time.sleep(2)
+            # repp = requests.post(url=imgpost, data=postdata, headers=headers)
+            # print(repp)
+            zuhe = "<img src=\"" + jpg + "\" >"
+            tupian += zuhe
+        huanghang = "<br />"
+        tupianxianshi = '<meta name="referrer" content="no-referrer" />'
+        content = nr + huanghang + tupianxianshi + tupian
 
-
-        return nr
+        return content
 
     elif tp == 64:
+        # 2022年3月份替换模板消息发送渠道，为了拼接图片。故作出如下更改
+        tupian=''
         nr = data['card']
         js = json.loads(nr)
 
@@ -61,14 +69,23 @@ def ifzf(tpid):
         print(zlpic_url)
         # jpg = pic['img_src']
         # print(jpg)
-        postdata = json.dumps({"msg": {"type": "image", "url": "%s" % zlpic_url}})
-        time.sleep(4)
-        repp = requests.post(url=imgpost, data=postdata, headers=headers)
-        print(repp)
+        zuhe = "<img src=\"" + zlpic_url + "\" >"
+        tupian += zuhe
+        # postdata = json.dumps({"msg": {"type": "image", "url": "%s" % zlpic_url}})
+        # time.sleep(4)
+        # repp = requests.post(url=imgpost, data=postdata, headers=headers)
+        # print(repp)
+        huanghang = "<br />"
+        tupianxianshi = '<meta name="referrer" content="no-referrer" />'
+        content = zltitle + huanghang + tupianxianshi + tupian
 
-        return zltitle
+        return content
+
+        # return zltitle
 
     elif tp == 4:
+        # 2022年3月份替换模板消息发送渠道，为了拼接图片。故作出如下更改
+        tupian = ''
         nr = data['card']
         js = json.loads(nr)
         wenzi = js['item']['content']
@@ -76,17 +93,26 @@ def ifzf(tpid):
         return wenzi
     elif tp == 8:
         # 投稿动态
+        # 2022年3月份替换模板消息发送渠道，为了拼接图片。故作出如下更改
+        tupian = ''
         nr = data['card']
         js = json.loads(nr)
         tgtlttle = js['title']
         tgpic_url = js['pic']
-        postdata = json.dumps({"msg": {"type": "image", "url": "%s" % tgpic_url}})
-        time.sleep(4)
-        repp = requests.post(url=imgpost, data=postdata, headers=headers)
-        print(repp)
+        zuhe = "<img src=\"" + tgpic_url + "\" >"
+        tupian += zuhe
+        # postdata = json.dumps({"msg": {"type": "image", "url": "%s" % tgpic_url}})
+        # time.sleep(4)
+        # repp = requests.post(url=imgpost, data=postdata, headers=headers)
+        # print(repp)
+        huanghang = "<br />"
+        tupianxianshi = '<meta name="referrer" content="no-referrer" />'
+        content = tgtlttle + huanghang + tupianxianshi + tupian
+
+        return content
 
 
-        return tgtlttle
+        # return tgtlttle
 
 
 
@@ -95,5 +121,4 @@ def ifzf(tpid):
 # if __name__ == '__main__':
 #     d=ifzf(607804998435580564)
 #     print(d)
-
 
