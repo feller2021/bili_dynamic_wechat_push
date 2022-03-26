@@ -71,7 +71,7 @@ def jiexi(dk, cardss, jk):
         typ = bilitype.bilitype(dynamic_type)
         # fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + zfnr + '\n' + '------------------------' + '\n' + '------------------------' + '\n' + diaoifzf + '\n' + '------------------------'
 
-        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay 
+        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay
         print(fasongneir)
         postdata = json.dumps({"msg": fasongneir})
         time.sleep(2)
@@ -205,7 +205,7 @@ def jiexi(dk, cardss, jk):
         print(wenzi)
         # fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
         #     wenzi) + '\n'
-        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay 
+        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay
 
         fasongneir2 = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
             wenzi) + '\n'
@@ -271,6 +271,7 @@ def jiexi(dk, cardss, jk):
         # postdata36 = json.dumps({"msg": {"type": "image", "url": "%s" % tgpic_url}})
         # repp2 = requests.post(url=imgpost, data=postdata36, headers=headers)
         # print(repp2)
+        tgpic_url = "<img src=\"" + tgpic_url + "\" >"
         huanghang = "<br />"
         tupianxianshi = '<meta name="referrer" content="no-referrer" />'
         content = fasongneir2 + huanghang + tupianxianshi + tgpic_url
@@ -312,7 +313,7 @@ def jiexi(dk, cardss, jk):
         lj = "<a href = " + lj + ">点击该链接</a>"
         # fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
         #     zltitle) + '\n'
-        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay 
+        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay
 
         fasongneir2 = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
             zltitle) + '\n'
@@ -328,6 +329,7 @@ def jiexi(dk, cardss, jk):
         # postdata = json.dumps({"msg": {"type": "image", "url": "%s" % zlpic_url}})
         # repp2 = requests.post(url=imgpost, data=postdata, headers=headers)
         # print(repp2)
+        zlpic_url = "<img src=\"" + zlpic_url + "\" >"
         huanghang = "<br />"
         tupianxianshi = '<meta name="referrer" content="no-referrer" />'
         content = fasongneir2 + huanghang + tupianxianshi + zlpic_url
