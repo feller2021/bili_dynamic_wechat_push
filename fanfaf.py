@@ -71,7 +71,7 @@ def jiexi(dk, cardss, jk):
         typ = bilitype.bilitype(dynamic_type)
         # fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + zfnr + '\n' + '------------------------' + '\n' + '------------------------' + '\n' + diaoifzf + '\n' + '------------------------'
 
-        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' '
+        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay 
         print(fasongneir)
         postdata = json.dumps({"msg": fasongneir})
         time.sleep(2)
@@ -183,7 +183,7 @@ def jiexi(dk, cardss, jk):
         print(wenzi)
         # fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
         #     wenzi) + '\n'
-        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n'
+        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay 
 
         fasongneir2 = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
             wenzi) + '\n'
@@ -227,7 +227,7 @@ def jiexi(dk, cardss, jk):
         typ = bilitype.bilitype(dynamic_type)
         # fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
         #     tgtlttle) + '\n'
-        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n'
+        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay
 
         fasongneir2 = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
             tgtlttle) + '\n'
@@ -278,7 +278,7 @@ def jiexi(dk, cardss, jk):
         typ = bilitype.bilitype(dynamic_type)
         # fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
         #     zltitle) + '\n'
-        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n'
+        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay 
 
         fasongneir2 = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
             zltitle) + '\n'
