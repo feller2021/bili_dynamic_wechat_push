@@ -75,6 +75,16 @@ def jiexi(dk, cardss, jk):
         print(fasongneir)
         postdata = json.dumps({"msg": fasongneir})
         time.sleep(2)
+
+        # lianjie = ''
+        pattern = re.compile(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')  # 匹配模式
+
+        # string = 'Its after 12 noon, do you know where your rooftops are? http://tinyurl.com/NYCRooftops '
+        url = re.findall(pattern, lj)
+        for urll in url:
+            # print(urll)
+            lj = urll
+        lj = "<a href = " + lj + ">点击该链接</a>"
         fasongneir2 = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + zfnr + '\n' + '------------------------' + '\n' + '------------------------' + '\n' + diaoifzf + '\n' + '------------------------'
 
         # repp = requests.post(url=imgpost, data=postdata, headers=headers)
@@ -120,6 +130,12 @@ def jiexi(dk, cardss, jk):
         print(pictures_count)
         print(dynamic_id)
         typ = bilitype.bilitype(dynamic_type)
+        pattern = re.compile(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')  # 匹配模式
+        url = re.findall(pattern, lj)
+        for urll in url:
+            # print(urll)
+            lj = urll
+        lj = "<a href = " + lj + ">点击该链接</a>"
 
         # fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + '图片数量：' + str(
         #     pictures_count) + ' ' + '张' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
@@ -179,6 +195,12 @@ def jiexi(dk, cardss, jk):
 
         wenzi = content['content']
         typ = bilitype.bilitype(dynamic_type)
+        pattern = re.compile(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')  # 匹配模式
+        url = re.findall(pattern, lj)
+        for urll in url:
+            # print(urll)
+            lj = urll
+        lj = "<a href = " + lj + ">点击该链接</a>"
 
         print(wenzi)
         # fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
@@ -225,6 +247,12 @@ def jiexi(dk, cardss, jk):
         print(tgtlttle)
         print(tgpic_url)
         typ = bilitype.bilitype(dynamic_type)
+        pattern = re.compile(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')  # 匹配模式
+        url = re.findall(pattern, lj)
+        for urll in url:
+            # print(urll)
+            lj = urll
+        lj = "<a href = " + lj + ">点击该链接</a>"
         # fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
         #     tgtlttle) + '\n'
         fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay
@@ -276,6 +304,12 @@ def jiexi(dk, cardss, jk):
         print(zltitle)
         print(zlpic_url)
         typ = bilitype.bilitype(dynamic_type)
+        pattern = re.compile(r'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+')  # 匹配模式
+        url = re.findall(pattern, lj)
+        for urll in url:
+            # print(urll)
+            lj = urll
+        lj = "<a href = " + lj + ">点击该链接</a>"
         # fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
         #     zltitle) + '\n'
         fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay 
