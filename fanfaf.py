@@ -207,8 +207,8 @@ def jiexi(dk, cardss, jk):
         #     wenzi) + '\n'
         fasongneir = '[B站]@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay
 
-        fasongneir2 = '@' + uname + '<br>'+'消息类型：B站推送'+ '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
-            wenzi) + '\n'
+        fasongneir2 = '@' + uname + '<br>'+'消息类型：B站推送'+ '<br>' + dynamic_time + ' ' + '<br>' + '▷' + '动态类型：' + typ + ' ' + '<br>' + '▷' + '推送时间：' + tzshj + ' ' + '<br>' + '▷' + '延时推送：' + timedelay + ' ' + '<br>' + '▷' + 'B站链接：' + lj + ' ' + '<br>' + '------------------------' + '<br>' + str(
+            wenzi) + '<br>'
         # print(fasongneir)
         # postdata = json.dumps({"msg": fasongneir})
         # time.sleep(2)
@@ -257,8 +257,8 @@ def jiexi(dk, cardss, jk):
         #     tgtlttle) + '\n'
         fasongneir = '[B站]@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay
 
-        fasongneir2 = '@' + uname + '<br>'+'消息类型：B站推送'+ '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
-            tgtlttle) + '\n'
+        fasongneir2 = '@' + uname + '<br>'+'消息类型：B站推送'+ '<br>' + dynamic_time + ' ' + '<br>' + '▷' + '动态类型：' + typ + ' ' + '<br>' + '▷' + '推送时间：' + tzshj + ' ' + '<br>' + '▷' + '延时推送：' + timedelay + ' ' + '<br>' + '▷' + 'B站链接：' + lj + ' ' + '<br>' + '------------------------' + '<br>' + str(
+            tgtlttle) + '<br>'
         print(fasongneir)
         # postdata = json.dumps({"msg": fasongneir})
         # time.sleep(2)
@@ -315,8 +315,8 @@ def jiexi(dk, cardss, jk):
         #     zltitle) + '\n'
         fasongneir = '[B站]@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay
 
-        fasongneir2 = '@' + uname + '<br>'+'消息类型：B站推送'+ '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
-            zltitle) + '\n'
+        fasongneir2 = '@' + uname + '<br>'+'消息类型：B站推送'+ '<br>' + dynamic_time + ' ' + '<br>' + '▷' + '动态类型：' + typ + ' ' + '<br>' + '▷' + '推送时间：' + tzshj + ' ' + '<br>' + '▷' + '延时推送：' + timedelay + ' ' + '<br>' + '▷' + 'B站链接：' + lj + ' ' + '<br>' + '------------------------' + '<br>' + str(
+            zltitle) + '<br>'
         print(fasongneir)
         postdata = json.dumps({"msg": fasongneir})
         time.sleep(2)
