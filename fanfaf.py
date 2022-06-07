@@ -71,7 +71,7 @@ def jiexi(dk, cardss, jk):
         typ = bilitype.bilitype(dynamic_type)
         # fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + zfnr + '\n' + '------------------------' + '\n' + '------------------------' + '\n' + diaoifzf + '\n' + '------------------------'
 
-        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay
+        fasongneir = '[B站]@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay
         print(fasongneir)
         postdata = json.dumps({"msg": fasongneir})
         time.sleep(2)
@@ -85,7 +85,7 @@ def jiexi(dk, cardss, jk):
             # print(urll)
             lj = urll
         lj = "<a href = " + lj + ">点击该链接</a>"
-        fasongneir2 = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + zfnr + '\n' + '------------------------' + '\n' + '------------------------' + '\n' + diaoifzf + '\n' + '------------------------'
+        fasongneir2 = '@' + uname + '<br>'+'消息类型：B站推送'+ '<br>' + dynamic_time + ' ' + '<br>' + '▷' + '动态类型：' + typ + ' ' + '<br>' + '▷' + '推送时间：' + tzshj + ' ' + '<br>' + '▷' + '延时推送：' + timedelay + ' ' + '<br>' + '▷' + 'B站链接：' + lj + ' ' + '<br>' + '------------------------' + '<br>' + zfnr + '<br>' + '------------------------' + '<br>' + '------------------------' + '<br>' + diaoifzf + '<br>' + '------------------------'
 
         # repp = requests.post(url=imgpost, data=postdata, headers=headers)
         # print(repp)
@@ -141,13 +141,13 @@ def jiexi(dk, cardss, jk):
         #     pictures_count) + ' ' + '张' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
         #     neirong) + '\n'
 
-        fasongneir = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + '图片数量：' + str(
+        fasongneir = '[B站]@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + '图片数量：' + str(
             pictures_count) + ' ' + '张' + '\n'
 
         print(fasongneir)
-        fasongneir2 = '@' + uname + '\n' + dynamic_time + ' ' + '\n' + '▷' + '动态类型：' + typ + ' ' + '\n' + '▷' + '推送时间：' + tzshj + ' ' + '\n' + '▷' + '延时推送：' + timedelay + ' ' + '\n' + '▷' + '图片数量：' + str(
-            pictures_count) + ' ' + '张' + '\n' + '▷' + 'B站链接：' + lj + ' ' + '\n' + '------------------------' + '\n' + str(
-            neirong) + '\n'
+        fasongneir2 = '@' + uname + '<br>'+'消息类型：B站推送'+ '<br>' + dynamic_time + ' ' + '<br>' + '▷' + '动态类型：' + typ + ' ' + '<br>' + '▷' + '推送时间：' + tzshj + ' ' + '<br>' + '▷' + '延时推送：' + timedelay + ' ' + '<br>' + '▷' + '图片数量：' + str(
+            pictures_count) + ' ' + '张' + '<br>' + '▷' + 'B站链接：' + lj + ' ' + '<br>' + '------------------------' + '<br>' + str(
+            neirong) + '<br>'
         # postdata = json.dumps({"msg": fasongneir})
         # time.sleep(2)
         # repp = requests.post(url=imgpost, data=postdata, headers=headers)
