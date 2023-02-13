@@ -90,7 +90,7 @@ def jiexi(dk, cardss, jk):
         # repp = requests.post(url=imgpost, data=postdata, headers=headers)
         # print(repp)
         url = 'http://wxpusher.zjiecode.com/api/send/message'
-        HEADERS = {'Content-Type': 'application/json'}
+        HEADERS = {'Content-Type': 'application/json','Connection':'close'}
         FormData = {
             "appToken": "AT_iaPxpUE0FLNUECu1zFnKhFR7R9NU5K8e",
             "content": fasongneir2,
@@ -105,7 +105,7 @@ def jiexi(dk, cardss, jk):
             ],
             "url": ""
         }
-        res = requests.post(url=url, json=FormData, headers=HEADERS)
+        res = requests.post(url=url, json=FormData, headers=HEADERS,stream=True, verify=False)
         print(res.text)
 
 
@@ -169,7 +169,7 @@ def jiexi(dk, cardss, jk):
         tupianxianshi = '<meta name="referrer" content="no-referrer" />'
         content = fasongneir2 + huanghang + tupianxianshi + tupian
         url = 'http://wxpusher.zjiecode.com/api/send/message'
-        HEADERS = {'Content-Type': 'application/json'}
+        HEADERS = {'Content-Type': 'application/json','Connection':'close'}
         FormData = {
             "appToken": "AT_iaPxpUE0FLNUECu1zFnKhFR7R9NU5K8e",
             "content": content,
@@ -184,7 +184,7 @@ def jiexi(dk, cardss, jk):
             ],
             "url": ""
         }
-        res = requests.post(url=url, json=FormData, headers=HEADERS)
+        res = requests.post(url=url, json=FormData, headers=HEADERS,stream=True, verify=False)
         print(res.text)
 
 
@@ -215,7 +215,7 @@ def jiexi(dk, cardss, jk):
         # repp = requests.post(url=imgpost, data=postdata, headers=headers)
         # print(repp)
         url = 'http://wxpusher.zjiecode.com/api/send/message'
-        HEADERS = {'Content-Type': 'application/json'}
+        HEADERS = {'Content-Type': 'application/json','Connection':'close'}
         FormData = {
             "appToken": "AT_iaPxpUE0FLNUECu1zFnKhFR7R9NU5K8e",
             "content": fasongneir2,
@@ -230,7 +230,7 @@ def jiexi(dk, cardss, jk):
             ],
             "url": ""
         }
-        res = requests.post(url=url, json=FormData, headers=HEADERS)
+        res = requests.post(url=url, json=FormData, headers=HEADERS,stream=True, verify=False)
         print(res.text)
 
 
@@ -276,7 +276,7 @@ def jiexi(dk, cardss, jk):
         tupianxianshi = '<meta name="referrer" content="no-referrer" />'
         content = fasongneir2 + huanghang + tupianxianshi + tgpic_url
         url = 'http://wxpusher.zjiecode.com/api/send/message'
-        HEADERS = {'Content-Type': 'application/json'}
+        HEADERS = {'Content-Type': 'application/json','Connection':'close'}
         FormData = {
             "appToken": "AT_iaPxpUE0FLNUECu1zFnKhFR7R9NU5K8e",
             "content": content,
@@ -291,7 +291,7 @@ def jiexi(dk, cardss, jk):
             ],
             "url": ""
         }
-        res = requests.post(url=url, json=FormData, headers=HEADERS)
+        res = requests.post(url=url, json=FormData, headers=HEADERS,stream=True, verify=False)
         print(res.text)
 
 
@@ -334,7 +334,7 @@ def jiexi(dk, cardss, jk):
         tupianxianshi = '<meta name="referrer" content="no-referrer" />'
         content = fasongneir2 + huanghang + tupianxianshi + zlpic_url
         url = 'http://wxpusher.zjiecode.com/api/send/message'
-        HEADERS = {'Content-Type': 'application/json'}
+        HEADERS = {'Content-Type': 'application/json','Connection':'close'}
         FormData = {
             "appToken": "AT_iaPxpUE0FLNUECu1zFnKhFR7R9NU5K8e",
             "content": content,
@@ -349,6 +349,6 @@ def jiexi(dk, cardss, jk):
             ],
             "url": ""
         }
-        res = requests.post(url=url, json=FormData, headers=HEADERS)
+        res = requests.post(url=url, json=FormData, headers=HEADERS,stream=True, verify=False)
         print(res.text)
     print("Write OK")
