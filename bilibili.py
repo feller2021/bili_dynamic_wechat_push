@@ -10,6 +10,7 @@ from datetime import datetime, timedelta
 import fanfaf
 import ifzf
 import os
+import traceback
 
 
 
@@ -33,9 +34,9 @@ class bzMonitor():
                     i)
                 self.bzurl.append(url)
         except Exception as e:
-            self.echoMsg('Error', e)
-
-            sys.exit()
+            print(traceback.format_exc())
+            # self.echoMsg('Error', e)
+            # sys.exit()
 
     # 获取各用户当前视频数目
     def getBZQueue(self):
@@ -53,8 +54,9 @@ class bzMonitor():
                         f.write(str(jk) + '\n')
                 self.echoMsg('Info', '视频数目获取成功')
         except Exception as e:
-            self.echoMsg('Error', e)
-            sys.exit()
+            print(traceback.format_exc())
+            # self.echoMsg('Error', e)
+            # sys.exit()
 
     # 监控函数
     def startbzmonitor(self, ):
