@@ -84,6 +84,8 @@ class bzMonitor():
                         with open('bilibili.txt', 'a') as f:
                             f.write(str(jk) + '\n')
                             self.echoMsg('Info', 'B站视频更新啦!!!')
+                            print("最新的是id："+str(jk))
+                            
                             fanfaf.jiexi(dk,cardss,jk)
         except Exception as e:
             self.echoMsg('Error', e)
