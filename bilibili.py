@@ -83,8 +83,9 @@ class bzMonitor():
                     if str(jk) not in bilibili:
                         with open('bilibili.txt', 'a') as f:
                             f.write(str(jk) + '\n')
-                            self.echoMsg('Info', 'B站视频更新啦!!!')
-                            print("最新的是id："+str(jk))
+                            self.echoMsg('Info', 'B站动态更新啦!!!')
+                            print("最新的B站动态id是："+str(jk))
+                            print("最新的B站动态链接是："+"https://t.bilibili.com/"+str(jk))
                             
                             fanfaf.jiexi(dk,cardss,jk)
         except Exception as e:
