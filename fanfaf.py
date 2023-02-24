@@ -159,7 +159,7 @@ def jiexi(dk, cardss, jk):
             zlpic_url = pic['img_src']
 
             print(pic['img_src'])
-            zuhe = "<img src=\"" + zlpic_url + "\" >"
+            zuhe = "<img style=max-width:100%; max-height:100%; src=\"" + zlpic_url + "\" >"
             tupian += zuhe
             # postdata = json.dumps({"msg": {"type": "image", "url": "%s" % zlpic_url}})
             # repp = requests.post(url=imgpost, data=postdata, headers=headers)
@@ -271,7 +271,7 @@ def jiexi(dk, cardss, jk):
         # postdata36 = json.dumps({"msg": {"type": "image", "url": "%s" % tgpic_url}})
         # repp2 = requests.post(url=imgpost, data=postdata36, headers=headers)
         # print(repp2)
-        tgpic_url = "<img src=\"" + tgpic_url + "\" >"
+        tgpic_url = "<img style=max-width:100%; max-height:100%; src=\"" + tgpic_url + "\" >"
         huanghang = "<br />"
         tupianxianshi = '<meta name="referrer" content="no-referrer" />'
         content = fasongneir2 + huanghang + tupianxianshi + tgpic_url
@@ -329,7 +329,7 @@ def jiexi(dk, cardss, jk):
         # postdata = json.dumps({"msg": {"type": "image", "url": "%s" % zlpic_url}})
         # repp2 = requests.post(url=imgpost, data=postdata, headers=headers)
         # print(repp2)
-        zlpic_url = "<img src=\"" + zlpic_url + "\" >"
+        zlpic_url = "<img style=max-width:100%; max-height:100%; src=\"" + zlpic_url + "\" >"
         huanghang = "<br />"
         tupianxianshi = '<meta name="referrer" content="no-referrer" />'
         content = fasongneir2 + huanghang + tupianxianshi + zlpic_url
