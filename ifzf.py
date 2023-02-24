@@ -49,7 +49,7 @@ def ifzf(tpid):
             # time.sleep(2)
             # repp = requests.post(url=imgpost, data=postdata, headers=headers)
             # print(repp)
-            zuhe = "<img src=\"" + jpg + "\" >"
+            zuhe = "<img style=max-width:100%; max-height:100%; src=\"" + jpg + "\" >"
             tupian += zuhe
         huanghang = "<br />"
         tupianxianshi = '<meta name="referrer" content="no-referrer" />'
@@ -69,7 +69,7 @@ def ifzf(tpid):
         print(zlpic_url)
         # jpg = pic['img_src']
         # print(jpg)
-        zuhe = "<img src=\"" + zlpic_url + "\" >"
+        zuhe = "<img style=max-width:100%; max-height:100%; src=\"" + zlpic_url + "\" >"
         tupian += zuhe
         # postdata = json.dumps({"msg": {"type": "image", "url": "%s" % zlpic_url}})
         # time.sleep(4)
@@ -99,7 +99,7 @@ def ifzf(tpid):
         js = json.loads(nr)
         tgtlttle = js['title']
         tgpic_url = js['pic']
-        zuhe = "<img src=\"" + tgpic_url + "\" >"
+        zuhe = "<img style=max-width:100%; max-height:100%; src=\"" + tgpic_url + "\" >"
         tupian += zuhe
         # postdata = json.dumps({"msg": {"type": "image", "url": "%s" % tgpic_url}})
         # time.sleep(4)
@@ -121,4 +121,3 @@ def ifzf(tpid):
 # if __name__ == '__main__':
 #     d=ifzf(607804998435580564)
 #     print(d)
-
